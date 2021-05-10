@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 
-import sys
-sys.path.append('../')
+
 from environment.env_config import ACTIONS
 
 

@@ -1,8 +1,7 @@
 import time
 import numpy as np
 
-import sys
-sys.path.append('../')
+
 from environment.screen_controller import ScreenController
 from environment import env_config
 from players.base_player import BasePlayer
@@ -20,12 +19,11 @@ class Game:
         self.screen_controller.restart()
         time.sleep(1)
 
-        while (not self.game_ended):
+        while not self.game_ended:
             self.step()
             time.sleep(0.1)
 
         score = 0
-        print(score)
         return self.history, score
 
     def step(self):
@@ -43,9 +41,9 @@ class Game:
 
     def check_end_game(self):
         if len(self.history) > 2:
-            print(np.square(np.subtract(self.history[-1][0], self.history[-2][0])).mean())
             if np.square(np.subtract(self.history[-1][0], self.history[-2][0])).mean() < 0.005: # screen not changing -> game ended
                 self.game_ended = True
+                time.sleep(1)
 
     def make_action(self, action):
         if action == env_config.ACTIONS['jump']:
