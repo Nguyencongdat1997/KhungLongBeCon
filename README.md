@@ -4,7 +4,7 @@
 - Open chorme dino game at
     
     
-    chome://dino
+    chrome://dino
 - Update screen configuration in environment\env_config
 - Run 
 
