@@ -6,9 +6,9 @@ class ReplayBuffer():
         self.mem_size = max_size
         self.mem_counter = 0
 
-        self.states = np.zeros((self.mem_size, *input_shape), dtype=np.float64)
-        self.next_states = np.zeros((self.mem_size, *input_shape), dtype=np.float64)
-        self.rewards = np.zeros(self.mem_size, dtype=np.float64)
+        self.states = np.zeros((self.mem_size, *input_shape), dtype=np.float32)
+        self.next_states = np.zeros((self.mem_size, *input_shape), dtype=np.float32)
+        self.rewards = np.zeros(self.mem_size, dtype=np.float32)
         self.actions = np.zeros(self.mem_size, dtype=np.int32)
         self.done = np.zeros(self.mem_size, dtype=np.bool)
 

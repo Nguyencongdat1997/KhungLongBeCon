@@ -11,6 +11,8 @@ class Environment:
     def __init__(self):
         self.screen_controller = ScreenController()
         self.previous_state = None
+        self.n_action = len(env_config.ACTIONS)
+        self.observation_shape = (self.screen_controller.screen_height, self.screen_controller.screen_width)
 
     def step(self, action):
         self.make_action(action)

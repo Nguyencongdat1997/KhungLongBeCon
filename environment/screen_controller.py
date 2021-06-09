@@ -29,7 +29,7 @@ class ScreenController():
         pyautogui.keyUp('down')
 
     def screen(self):
-        box = (self.screen_start[0], self.screen_start[1], self.screen_width , self.screen_height)
+        box = (self.screen_start[0], self.screen_start[1], self.screen_start[0]+self.screen_width , self.screen_start[1]+self.screen_height)
         image = ImageGrab.grab(box)
         gray_image = ImageOps.grayscale(image)
         # gray_image.show()

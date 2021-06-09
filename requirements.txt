@@ -1,3 +1,4 @@
 Pillow
 PyAutoGUI
 Numpy
+tensorflow==2.3.1
