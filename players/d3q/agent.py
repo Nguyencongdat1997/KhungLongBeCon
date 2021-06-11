@@ -9,8 +9,8 @@ from utils.replay_buffer import ReplayBuffer
 
 
 class Agent():
-    def __init__(self, lr, gamma, n_actions, epsilon, batch_size, input_dims, epsilon_dec=1e-3, epsilon_end=0.01,
-                 mem_size=100, replace=160):
+    def __init__(self, lr, gamma, n_actions, epsilon, batch_size, input_dims, coldstart, epsilon_dec=1e-3, epsilon_end=0.01,
+                 mem_size=100, replace=256):
         self.action_space = [i for i in range(n_actions)]
         self.gamma = gamma
         self.epsilon = epsilon
@@ -18,6 +18,7 @@ class Agent():
         self.epsilon_end = epsilon_end
         self.replace = replace
         self.batch_size = batch_size
+        self.coldstart = coldstart
 
         self.learned_step_counter = 0
         self.memory = ReplayBuffer(mem_size, input_dims)
@@ -37,7 +38,7 @@ class Agent():
             action = np.random.choice(self.action_space)
         else:
             state = np.array([observation])
-            state = tf.convert_to_tensor(state, dtype=tf.float32)
+            #state = tf.convert_to_tensor(state, dtype=tf.float32)
             actions = self.q_active.advantage(state)
             action = tf.math.argmax(actions, axis=1).numpy()[0]
         return action
@@ -67,7 +68,21 @@ class Agent():
         self.learned_step_counter += 1
 
     def train(self, env, n_games):
-        print('Start training ----------')
+        if self.coldstart > 0:
+            print('Cold start ----------')       
+            steps = 0        
+            while steps < self.coldstart:
+                done = False
+                observation = env.reset()
+                while not done:
+                    steps += 1
+                    action = np.random.choice(self.action_space)
+                    reward, next_observation, done = env.step(action)
+                    self.store_step(observation, action, reward, next_observation, done)
+                    observation = next_observation
+                print(' Steps', steps)
+
+        print('Start training ----------')       
         scores = []
         eps_history = []
         steps = 0
@@ -85,7 +100,7 @@ class Agent():
             eps_history.append(self.epsilon)
             scores.append(score)
             avg_score = np.mean(scores[-5:])
-            print('Episode', i, '- trained steps', steps, '- score %.1f' % score, '- avg_score %.1f ' % avg_score, '- epsilon %.001f ' % self.epsilon)
+            print(' Episode', i, '- trained steps', steps, '- score %.1f' % score, '- avg_score %.1f ' % avg_score, '- epsilon %.001f ' % self.epsilon)
 
             self.learn()  # TODO: decide to learn in the end of the episode or in each steps
         print('End training ----------')
