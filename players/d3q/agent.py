@@ -19,6 +19,7 @@ class Agent():
         self.replace = replace
         self.batch_size = batch_size
         self.coldstart = coldstart
+        self.mem_size = mem_size
 
         self.learned_step_counter = 0
         self.memory = ReplayBuffer(mem_size, input_dims)
@@ -38,7 +39,7 @@ class Agent():
             action = np.random.choice(self.action_space)
         else:
             state = np.array([observation])
-            #state = tf.convert_to_tensor(state, dtype=tf.float32)
+            state = tf.convert_to_tensor(state, dtype=tf.float32)
             actions = self.q_active.advantage(state)
             action = tf.math.argmax(actions, axis=1).numpy()[0]
         return action
@@ -100,9 +101,11 @@ class Agent():
             eps_history.append(self.epsilon)
             scores.append(score)
             avg_score = np.mean(scores[-5:])
-            print(' Episode', i, '- trained steps', steps, '- score %.1f' % score, '- avg_score %.1f ' % avg_score, '- epsilon %.001f ' % self.epsilon)
+            print(' Episode', i, '- Trained steps', steps, '- Score %.1f' % score, '- Avg_score %.1f ' % avg_score, 
+                    '- Epsilon %.001f ' % self.epsilon, '- Learned {} steps'.format(self.learned_step_counter))
 
-            self.learn()  # TODO: decide to learn in the end of the episode or in each steps
+            for i in range(int(self.mem_size/self.batch_size)):
+                self.learn()  # TODO: decide to learn in the end of the episode or in each steps
         print('End training ----------')
 
     def save_model(self, train_dir):
