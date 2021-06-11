@@ -10,7 +10,7 @@ from utils.replay_buffer import ReplayBuffer
 
 class Agent():
     def __init__(self, lr, gamma, n_actions, epsilon, batch_size, input_dims, epsilon_dec=1e-3, epsilon_end=0.01,
-                 mem_size=100, replace=100):
+                 mem_size=100, replace=160):
         self.action_space = [i for i in range(n_actions)]
         self.gamma = gamma
         self.epsilon = epsilon
@@ -24,6 +24,8 @@ class Agent():
         self.q_active = DuelingDeepQNetwork(n_actions, input_dims)
         self.q_frozen = DuelingDeepQNetwork(n_actions, input_dims)
 
+        self.q_active.build(input_shape =(batch_size,*input_dims))
+        self.q_frozen.build(input_shape =(batch_size,*input_dims))
         self.q_active.compile(optimizer=Adam(learning_rate=lr), loss='mean_squared_error')
         self.q_frozen.compile(optimizer=Adam(learning_rate=lr), loss='mean_squared_error')
 
@@ -35,6 +37,7 @@ class Agent():
             action = np.random.choice(self.action_space)
         else:
             state = np.array([observation])
+            state = tf.convert_to_tensor(state, dtype=tf.float32)
             actions = self.q_active.advantage(state)
             action = tf.math.argmax(actions, axis=1).numpy()[0]
         return action
@@ -49,11 +52,11 @@ class Agent():
         # get data
         states, actions, rewards, next_states, dones = self.memory.sample_buffer(self.batch_size)
         q_pred = self.q_active(states)
-        print(q_pred)
+        #print(q_pred)
         q_next = self.q_frozen(next_states)
         q_target = q_pred.numpy()
         max_next_actions = tf.math.argmax(self.q_active(next_states), axis=1)
-        print(max_next_actions)
+        #print(max_next_actions)
         for i, terminated in enumerate(dones):
             q_target[i, actions[i]] = rewards[i] + self.gamma * q_next[i, int(max_next_actions[i])] * (1 - int(dones[i]))
 
@@ -82,7 +85,7 @@ class Agent():
             eps_history.append(self.epsilon)
             scores.append(score)
             avg_score = np.mean(scores[-5:])
-            print('Episode', i, '- trained steps', steps, '- score %.1f' % score, '- avg_score %.1f ' % avg_score)
+            print('Episode', i, '- trained steps', steps, '- score %.1f' % score, '- avg_score %.1f ' % avg_score, '- epsilon %.001f ' % self.epsilon)
 
             self.learn()  # TODO: decide to learn in the end of the episode or in each steps
         print('End training ----------')

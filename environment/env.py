@@ -12,13 +12,13 @@ class Environment:
         self.screen_controller = ScreenController()
         self.previous_state = None
         self.n_action = len(env_config.ACTIONS)
-        self.observation_shape = (self.screen_controller.screen_height, self.screen_controller.screen_width)
+        self.observation_shape = env_config.obs_shape
 
     def step(self, action):
         self.make_action(action)
         state = self.screen_controller.screen()
         done = self.check_end_game(state)
-        reward = 1
+        reward = 1 if not done else -1
         self.previous_state = state
         time.sleep(0.1)
         return reward, state, done
@@ -40,6 +40,8 @@ class Environment:
 
     def reset(self):
         self.screen_controller.restart()
+        state = self.screen_controller.screen()
+        return state
 
     def close(self):
         pass

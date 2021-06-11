@@ -1,6 +1,8 @@
-screen_start = (0, 100)
-screen_width = 1360
-screen_height = 700
+screen_start = (50, 100)
+screen_width = 1000
+screen_height = 400
+replay_btn = (670,360)
+obs_shape = (256,128)
 
 dino_x = 171
 dino_y = 395

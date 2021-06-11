@@ -1,4 +1,4 @@
-from environment.environment import Environment
+from environment.env import Environment
 from players.random_player import RandomPlayer
 
 if __name__ == "__main__":
