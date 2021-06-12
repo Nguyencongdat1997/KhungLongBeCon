@@ -1,5 +1,5 @@
 import time
-from PIL import ImageGrab, ImageOps, ImageDraw
+from PIL import ImageGrab, ImageOps, ImageDraw, Image
 import pyautogui
 import numpy as np
 
@@ -33,8 +33,12 @@ class ScreenController():
         image = ImageGrab.grab(box)
         gray_image = ImageOps.grayscale(image)
         gray_image = gray_image.resize(env_config.obs_shape)
-        # gray_image.show()
+        #print(gray_image.size)
+        #gray_image.show()
         array_image = np.array(gray_image)
+        # convert_back_image = Image.fromarray(array_image)
+        # convert_back_image.show()
+        # print(convert_back_image.size)
         return array_image
 
 
