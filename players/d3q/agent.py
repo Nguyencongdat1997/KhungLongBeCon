@@ -68,26 +68,30 @@ class Agent():
         self.epsilon = max(self.epsilon - self.epsilon_dec, self.epsilon_end)
         self.learned_step_counter += 1
 
-    def train(self, env, n_games):
-        if self.coldstart > 0:
-            print('Cold start ----------')       
-            steps = 0        
-            while steps < self.coldstart:
-                done = False
-                observation = env.reset()
-                while not done:
-                    steps += 1
-                    action = np.random.choice(self.action_space)
-                    reward, next_observation, done = env.step(action)
-                    self.store_step(observation, action, reward, next_observation, done)
-                    observation = next_observation
-                print(' Steps', steps)
+    def run_coldstart(self, env):
+        print('Cold start ----------')       
+        steps = 0        
+        while steps < self.coldstart:
+            done = False
+            observation = env.reset()
+            while not done:
+                steps += 1
+                action = np.random.choice(self.action_space)
+                reward, next_observation, done = env.step(action)
+                self.store_step(observation, action, reward, next_observation, done)
+                observation = next_observation
+            print(' Steps', steps)
 
-        print('Start training ----------')       
+    def train(self, env, n_games, n_save, train_dir='./trained_models'):
+        if self.coldstart > 0:
+            self.run_coldstart(env)
+            self.coldstart = 0
+
+        print('Start training----------') 
         scores = []
         eps_history = []
         steps = 0
-        for i in range(n_games):
+        for g_idx in range(n_games):
             done = False
             score = 0
             observation = env.reset()
@@ -100,13 +104,23 @@ class Agent():
                 observation = next_observation
             eps_history.append(self.epsilon)
             scores.append(score)
-            avg_score = np.mean(scores[-5:])
-            print(' Episode', i, '- Trained steps', steps, '- Score %.1f' % score, '- Avg_score %.1f ' % avg_score, 
+            avg_score = np.mean(scores[-5:])           
+
+            for l_idx in range(int(self.mem_size/self.batch_size)):
+                self.learn()  # TODO: decide to learn in the end of the episode or in each steps
+            
+            print(' Episode', g_idx, '- Trained steps', steps, '- Score %.1f' % score, '- Avg_score %.1f ' % avg_score, 
                     '- Epsilon %.001f ' % self.epsilon, '- Learned {} steps'.format(self.learned_step_counter))
 
-            for i in range(int(self.mem_size/self.batch_size)):
-                self.learn()  # TODO: decide to learn in the end of the episode or in each steps
-        print('End training ----------')
+            if g_idx>0 and g_idx%n_save == 0:
+                temp_epsilon = self.epsilon
+                self.epsilon = 0.0
+                self.save_model(train_dir)
+                self.epsilon = temp_epsilon
+        print('End training----------') 
+
+        self.epsilon = 0.0
+        self.save_model(train_dir)
 
     def save_model(self, train_dir):
         file_name = train_dir + '/d3qn_' + str(self.learned_step_counter) + '/model'

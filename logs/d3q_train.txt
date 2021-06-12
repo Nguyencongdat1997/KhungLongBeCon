@@ -1,0 +1,196 @@
+2021-06-12 07:47:18.022310: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Cold start ----------
+ Steps 14
+ Steps 35
+ Steps 62
+ Steps 77
+ Steps 92
+ Steps 107
+ Steps 122
+ Steps 142
+ Steps 156
+ Steps 174
+ Steps 190
+ Steps 204
+ Steps 219
+ Steps 234
+ Steps 256
+Start training----------
+ Episode 0 - Trained steps 15 - Score 13.0 - Avg_score 13.0  - Epsilon 0.9  - Learned 8 steps
+ Episode 1 - Trained steps 30 - Score 13.0 - Avg_score 13.0  - Epsilon 0.9  - Learned 16 steps
+ Episode 2 - Trained steps 46 - Score 14.0 - Avg_score 13.3  - Epsilon 0.9  - Learned 24 steps
+ Episode 3 - Trained steps 61 - Score 13.0 - Avg_score 13.2  - Epsilon 0.9  - Learned 32 steps
+ Episode 4 - Trained steps 77 - Score 14.0 - Avg_score 13.4  - Epsilon 0.9  - Learned 40 steps
+ Episode 5 - Trained steps 93 - Score 14.0 - Avg_score 13.6  - Epsilon 0.9  - Learned 48 steps
+ Episode 6 - Trained steps 108 - Score 13.0 - Avg_score 13.6  - Epsilon 0.8  - Learned 56 steps
+ Episode 7 - Trained steps 120 - Score 10.0 - Avg_score 12.8  - Epsilon 0.8  - Learned 64 steps
+ Episode 8 - Trained steps 141 - Score 19.0 - Avg_score 14.0  - Epsilon 0.8  - Learned 72 steps
+ Episode 9 - Trained steps 156 - Score 13.0 - Avg_score 13.8  - Epsilon 0.8  - Learned 80 steps
+ Episode 10 - Trained steps 175 - Score 17.0 - Avg_score 14.4  - Epsilon 0.8  - Learned 88 steps
+ Episode 11 - Trained steps 190 - Score 13.0 - Avg_score 14.4  - Epsilon 0.8  - Learned 96 steps
+ Episode 12 - Trained steps 208 - Score 16.0 - Avg_score 15.6  - Epsilon 0.8  - Learned 104 steps
+ Episode 13 - Trained steps 230 - Score 20.0 - Avg_score 15.8  - Epsilon 0.8  - Learned 112 steps
+ Episode 14 - Trained steps 253 - Score 21.0 - Avg_score 17.4  - Epsilon 0.8  - Learned 120 steps
+ Episode 15 - Trained steps 267 - Score 12.0 - Avg_score 16.4  - Epsilon 0.8  - Learned 128 steps
+ Episode 16 - Trained steps 285 - Score 16.0 - Avg_score 17.0  - Epsilon 0.8  - Learned 136 steps
+ Episode 17 - Trained steps 300 - Score 13.0 - Avg_score 16.4  - Epsilon 0.8  - Learned 144 steps
+ Episode 18 - Trained steps 316 - Score 14.0 - Avg_score 15.2  - Epsilon 0.7  - Learned 152 steps
+ Episode 19 - Trained steps 329 - Score 11.0 - Avg_score 13.2  - Epsilon 0.7  - Learned 160 steps
+ Episode 20 - Trained steps 347 - Score 16.0 - Avg_score 14.0  - Epsilon 0.7  - Learned 168 steps
+ Episode 21 - Trained steps 364 - Score 15.0 - Avg_score 13.8  - Epsilon 0.7  - Learned 176 steps
+ Episode 22 - Trained steps 380 - Score 14.0 - Avg_score 14.0  - Epsilon 0.7  - Learned 184 steps
+ Episode 23 - Trained steps 400 - Score 18.0 - Avg_score 14.8  - Epsilon 0.7  - Learned 192 steps
+ Episode 24 - Trained steps 412 - Score 10.0 - Avg_score 14.6  - Epsilon 0.7  - Learned 200 steps
+ Episode 25 - Trained steps 426 - Score 12.0 - Avg_score 13.8  - Epsilon 0.7  - Learned 208 steps
+ Episode 26 - Trained steps 440 - Score 12.0 - Avg_score 13.2  - Epsilon 0.7  - Learned 216 steps
+ Episode 27 - Trained steps 455 - Score 13.0 - Avg_score 13.0  - Epsilon 0.7  - Learned 224 steps
+ Episode 28 - Trained steps 477 - Score 20.0 - Avg_score 13.4  - Epsilon 0.7  - Learned 232 steps
+ Episode 29 - Trained steps 500 - Score 21.0 - Avg_score 15.6  - Epsilon 0.7  - Learned 240 steps
+ Episode 30 - Trained steps 516 - Score 14.0 - Avg_score 16.0  - Epsilon 0.7  - Learned 248 steps
+ Episode 31 - Trained steps 532 - Score 14.0 - Avg_score 16.4  - Epsilon 0.6  - Learned 256 steps
+ Episode 32 - Trained steps 547 - Score 13.0 - Avg_score 16.4  - Epsilon 0.6  - Learned 264 steps
+ Episode 33 - Trained steps 569 - Score 20.0 - Avg_score 16.4  - Epsilon 0.6  - Learned 272 steps
+ Episode 34 - Trained steps 582 - Score 11.0 - Avg_score 14.4  - Epsilon 0.6  - Learned 280 steps
+ Episode 35 - Trained steps 601 - Score 17.0 - Avg_score 15.0  - Epsilon 0.6  - Learned 288 steps
+ Episode 36 - Trained steps 615 - Score 12.0 - Avg_score 14.6  - Epsilon 0.6  - Learned 296 steps
+ Episode 37 - Trained steps 630 - Score 13.0 - Avg_score 14.6  - Epsilon 0.6  - Learned 304 steps
+ Episode 38 - Trained steps 650 - Score 18.0 - Avg_score 14.2  - Epsilon 0.6  - Learned 312 steps
+ Episode 39 - Trained steps 672 - Score 20.0 - Avg_score 16.0  - Epsilon 0.6  - Learned 320 steps
+ Episode 40 - Trained steps 689 - Score 15.0 - Avg_score 15.6  - Epsilon 0.6  - Learned 328 steps
+ Episode 41 - Trained steps 708 - Score 17.0 - Avg_score 16.6  - Epsilon 0.6  - Learned 336 steps
+ Episode 42 - Trained steps 722 - Score 12.0 - Avg_score 16.4  - Epsilon 0.6  - Learned 344 steps
+ Episode 43 - Trained steps 741 - Score 17.0 - Avg_score 16.2  - Epsilon 0.5  - Learned 352 steps
+ Episode 44 - Trained steps 759 - Score 16.0 - Avg_score 15.4  - Epsilon 0.5  - Learned 360 steps
+ Episode 45 - Trained steps 786 - Score 25.0 - Avg_score 17.4  - Epsilon 0.5  - Learned 368 steps
+ Episode 46 - Trained steps 806 - Score 18.0 - Avg_score 17.6  - Epsilon 0.5  - Learned 376 steps
+ Episode 47 - Trained steps 834 - Score 26.0 - Avg_score 20.4  - Epsilon 0.5  - Learned 384 steps
+ Episode 48 - Trained steps 854 - Score 18.0 - Avg_score 20.6  - Epsilon 0.5  - Learned 392 steps
+ Episode 49 - Trained steps 871 - Score 15.0 - Avg_score 20.4  - Epsilon 0.5  - Learned 400 steps
+ Episode 50 - Trained steps 901 - Score 28.0 - Avg_score 21.0  - Epsilon 0.5  - Learned 408 steps
+ Episode 51 - Trained steps 916 - Score 13.0 - Avg_score 20.0  - Epsilon 0.5  - Learned 416 steps
+ Episode 52 - Trained steps 935 - Score 17.0 - Avg_score 18.2  - Epsilon 0.5  - Learned 424 steps
+ Episode 53 - Trained steps 951 - Score 14.0 - Avg_score 17.4  - Epsilon 0.5  - Learned 432 steps
+ Episode 54 - Trained steps 979 - Score 26.0 - Avg_score 19.6  - Epsilon 0.5  - Learned 440 steps
+ Episode 55 - Trained steps 999 - Score 18.0 - Avg_score 17.6  - Epsilon 0.5  - Learned 448 steps
+ Episode 56 - Trained steps 1019 - Score 18.0 - Avg_score 18.6  - Epsilon 0.4  - Learned 456 steps
+ Episode 57 - Trained steps 1043 - Score 22.0 - Avg_score 19.6  - Epsilon 0.4  - Learned 464 steps
+ Episode 58 - Trained steps 1059 - Score 14.0 - Avg_score 19.6  - Epsilon 0.4  - Learned 472 steps
+ Episode 59 - Trained steps 1091 - Score 30.0 - Avg_score 20.4  - Epsilon 0.4  - Learned 480 steps
+ Episode 60 - Trained steps 1112 - Score 19.0 - Avg_score 20.6  - Epsilon 0.4  - Learned 488 steps
+ Episode 61 - Trained steps 1129 - Score 15.0 - Avg_score 20.0  - Epsilon 0.4  - Learned 496 steps
+ Episode 62 - Trained steps 1145 - Score 14.0 - Avg_score 18.4  - Epsilon 0.4  - Learned 504 steps
+ Episode 63 - Trained steps 1192 - Score 45.0 - Avg_score 24.6  - Epsilon 0.4  - Learned 512 steps
+ Episode 64 - Trained steps 1208 - Score 14.0 - Avg_score 21.4  - Epsilon 0.4  - Learned 520 steps
+ Episode 65 - Trained steps 1224 - Score 14.0 - Avg_score 20.4  - Epsilon 0.4  - Learned 528 steps
+ Episode 66 - Trained steps 1264 - Score 38.0 - Avg_score 25.0  - Epsilon 0.4  - Learned 536 steps
+ Episode 67 - Trained steps 1288 - Score 22.0 - Avg_score 26.6  - Epsilon 0.4  - Learned 544 steps
+ Episode 68 - Trained steps 1320 - Score 30.0 - Avg_score 23.6  - Epsilon 0.3  - Learned 552 steps
+ Episode 69 - Trained steps 1342 - Score 20.0 - Avg_score 24.8  - Epsilon 0.3  - Learned 560 steps
+ Episode 70 - Trained steps 1359 - Score 15.0 - Avg_score 25.0  - Epsilon 0.3  - Learned 568 steps
+ Episode 71 - Trained steps 1382 - Score 21.0 - Avg_score 21.6  - Epsilon 0.3  - Learned 576 steps
+ Episode 72 - Trained steps 1400 - Score 16.0 - Avg_score 20.4  - Epsilon 0.3  - Learned 584 steps
+ Episode 73 - Trained steps 1421 - Score 19.0 - Avg_score 18.2  - Epsilon 0.3  - Learned 592 steps
+ Episode 74 - Trained steps 1433 - Score 10.0 - Avg_score 16.2  - Epsilon 0.3  - Learned 600 steps
+ Episode 75 - Trained steps 1459 - Score 24.0 - Avg_score 18.0  - Epsilon 0.3  - Learned 608 steps
+ Episode 76 - Trained steps 1474 - Score 13.0 - Avg_score 16.4  - Epsilon 0.3  - Learned 616 steps
+ Episode 77 - Trained steps 1498 - Score 22.0 - Avg_score 17.6  - Epsilon 0.3  - Learned 624 steps
+ Episode 78 - Trained steps 1525 - Score 25.0 - Avg_score 18.8  - Epsilon 0.3  - Learned 632 steps
+ Episode 79 - Trained steps 1539 - Score 12.0 - Avg_score 19.2  - Epsilon 0.3  - Learned 640 steps
+ Episode 80 - Trained steps 1615 - Score 74.0 - Avg_score 29.2  - Epsilon 0.3  - Learned 648 steps
+ Episode 81 - Trained steps 1645 - Score 28.0 - Avg_score 32.2  - Epsilon 0.2  - Learned 656 steps
+ Episode 82 - Trained steps 1670 - Score 23.0 - Avg_score 32.4  - Epsilon 0.2  - Learned 664 steps
+ Episode 83 - Trained steps 1730 - Score 58.0 - Avg_score 39.0  - Epsilon 0.2  - Learned 672 steps
+ Episode 84 - Trained steps 1747 - Score 15.0 - Avg_score 39.6  - Epsilon 0.2  - Learned 680 steps
+ Episode 85 - Trained steps 1773 - Score 24.0 - Avg_score 29.6  - Epsilon 0.2  - Learned 688 steps
+ Episode 86 - Trained steps 1815 - Score 40.0 - Avg_score 32.0  - Epsilon 0.2  - Learned 696 steps
+ Episode 87 - Trained steps 1867 - Score 50.0 - Avg_score 37.4  - Epsilon 0.2  - Learned 704 steps
+ Episode 88 - Trained steps 1895 - Score 26.0 - Avg_score 31.0  - Epsilon 0.2  - Learned 712 steps
+ Episode 89 - Trained steps 1927 - Score 30.0 - Avg_score 34.0  - Epsilon 0.2  - Learned 720 steps
+ Episode 90 - Trained steps 1960 - Score 31.0 - Avg_score 35.4  - Epsilon 0.2  - Learned 728 steps
+ Episode 91 - Trained steps 1983 - Score 21.0 - Avg_score 31.6  - Epsilon 0.2  - Learned 736 steps
+ Episode 92 - Trained steps 2025 - Score 40.0 - Avg_score 29.6  - Epsilon 0.2  - Learned 744 steps
+ Episode 93 - Trained steps 2078 - Score 51.0 - Avg_score 34.6  - Epsilon 0.1  - Learned 752 steps
+ Episode 94 - Trained steps 2177 - Score 97.0 - Avg_score 48.0  - Epsilon 0.1  - Learned 760 steps
+ Episode 95 - Trained steps 2201 - Score 22.0 - Avg_score 46.2  - Epsilon 0.1  - Learned 768 steps
+ Episode 96 - Trained steps 2227 - Score 24.0 - Avg_score 46.8  - Epsilon 0.1  - Learned 776 steps
+ Episode 97 - Trained steps 2272 - Score 43.0 - Avg_score 47.4  - Epsilon 0.1  - Learned 784 steps
+ Episode 98 - Trained steps 2323 - Score 49.0 - Avg_score 47.0  - Epsilon 0.1  - Learned 792 steps
+ Episode 99 - Trained steps 2341 - Score 16.0 - Avg_score 30.8  - Epsilon 0.1  - Learned 800 steps
+ Episode 100 - Trained steps 2360 - Score 17.0 - Avg_score 29.8  - Epsilon 0.1  - Learned 808 steps
+ Episode 101 - Trained steps 2386 - Score 24.0 - Avg_score 29.8  - Epsilon 0.1  - Learned 816 steps
+ Episode 102 - Trained steps 2520 - Score 132.0 - Avg_score 47.6  - Epsilon 0.1  - Learned 824 steps
+ Episode 103 - Trained steps 2559 - Score 37.0 - Avg_score 45.2  - Epsilon 0.1  - Learned 832 steps
+ Episode 104 - Trained steps 2618 - Score 57.0 - Avg_score 53.4  - Epsilon 0.1  - Learned 840 steps
+ Episode 105 - Trained steps 2645 - Score 25.0 - Avg_score 55.0  - Epsilon 0.1  - Learned 848 steps
+ Episode 106 - Trained steps 2673 - Score 26.0 - Avg_score 55.4  - Epsilon 0.0  - Learned 856 steps
+ Episode 107 - Trained steps 2706 - Score 31.0 - Avg_score 35.2  - Epsilon 0.0  - Learned 864 steps
+ Episode 108 - Trained steps 2727 - Score 19.0 - Avg_score 31.6  - Epsilon 0.0  - Learned 872 steps
+ Episode 109 - Trained steps 2790 - Score 61.0 - Avg_score 32.4  - Epsilon 0.0  - Learned 880 steps
+ Episode 110 - Trained steps 2876 - Score 84.0 - Avg_score 44.2  - Epsilon 0.0  - Learned 888 steps
+ Episode 111 - Trained steps 2931 - Score 53.0 - Avg_score 49.6  - Epsilon 0.0  - Learned 896 steps
+ Episode 112 - Trained steps 3056 - Score 123.0 - Avg_score 68.0  - Epsilon 0.0  - Learned 904 steps
+ Episode 113 - Trained steps 3128 - Score 70.0 - Avg_score 78.2  - Epsilon 0.0  - Learned 912 steps
+ Episode 114 - Trained steps 3258 - Score 128.0 - Avg_score 91.6  - Epsilon 0.0  - Learned 920 steps
+ Episode 115 - Trained steps 3277 - Score 17.0 - Avg_score 78.2  - Epsilon 0.0  - Learned 928 steps
+ Episode 116 - Trained steps 3293 - Score 14.0 - Avg_score 70.4  - Epsilon 0.0  - Learned 936 steps
+ Episode 117 - Trained steps 3344 - Score 49.0 - Avg_score 55.6  - Epsilon 0.0  - Learned 944 steps
+ Episode 118 - Trained steps 3482 - Score 136.0 - Avg_score 68.8  - Epsilon 0.0  - Learned 952 steps
+ Episode 119 - Trained steps 3516 - Score 32.0 - Avg_score 49.6  - Epsilon 0.0  - Learned 960 steps
+ Episode 120 - Trained steps 3692 - Score 174.0 - Avg_score 81.0  - Epsilon 0.0  - Learned 968 steps
+ Episode 121 - Trained steps 3717 - Score 23.0 - Avg_score 82.8  - Epsilon 0.0  - Learned 976 steps
+ Episode 122 - Trained steps 3741 - Score 22.0 - Avg_score 77.4  - Epsilon 0.0  - Learned 984 steps
+ Episode 123 - Trained steps 3771 - Score 28.0 - Avg_score 55.8  - Epsilon 0.0  - Learned 992 steps
+ Episode 124 - Trained steps 3783 - Score 10.0 - Avg_score 51.4  - Epsilon 0.0  - Learned 1000 steps
+ Episode 125 - Trained steps 3795 - Score 10.0 - Avg_score 18.6  - Epsilon 0.0  - Learned 1008 steps
+ Episode 126 - Trained steps 3853 - Score 56.0 - Avg_score 25.2  - Epsilon 0.0  - Learned 1016 steps
+ Episode 127 - Trained steps 3956 - Score 101.0 - Avg_score 41.0  - Epsilon 0.0  - Learned 1024 steps
+ Episode 128 - Trained steps 4067 - Score 109.0 - Avg_score 57.2  - Epsilon 0.0  - Learned 1032 steps
+ Episode 129 - Trained steps 4104 - Score 35.0 - Avg_score 62.2  - Epsilon 0.0  - Learned 1040 steps
+ Episode 130 - Trained steps 4215 - Score 109.0 - Avg_score 82.0  - Epsilon 0.0  - Learned 1048 steps
+ Episode 131 - Trained steps 4232 - Score 15.0 - Avg_score 73.8  - Epsilon 0.0  - Learned 1056 steps
+ Episode 132 - Trained steps 4316 - Score 82.0 - Avg_score 70.0  - Epsilon 0.0  - Learned 1064 steps
+ Episode 133 - Trained steps 4327 - Score 9.0 - Avg_score 50.0  - Epsilon 0.0  - Learned 1072 steps
+ Episode 134 - Trained steps 4352 - Score 23.0 - Avg_score 47.6  - Epsilon 0.0  - Learned 1080 steps
+ Episode 135 - Trained steps 4392 - Score 38.0 - Avg_score 33.4  - Epsilon 0.0  - Learned 1088 steps
+ Episode 136 - Trained steps 4409 - Score 15.0 - Avg_score 33.4  - Epsilon 0.0  - Learned 1096 steps
+ Episode 137 - Trained steps 4441 - Score 30.0 - Avg_score 23.0  - Epsilon 0.0  - Learned 1104 steps
+ Episode 138 - Trained steps 4509 - Score 66.0 - Avg_score 34.4  - Epsilon 0.0  - Learned 1112 steps
+ Episode 139 - Trained steps 4553 - Score 42.0 - Avg_score 38.2  - Epsilon 0.0  - Learned 1120 steps
+ Episode 140 - Trained steps 4665 - Score 110.0 - Avg_score 52.6  - Epsilon 0.0  - Learned 1128 steps
+ Episode 141 - Trained steps 4739 - Score 72.0 - Avg_score 64.0  - Epsilon 0.0  - Learned 1136 steps
+ Episode 142 - Trained steps 4887 - Score 146.0 - Avg_score 87.2  - Epsilon 0.0  - Learned 1144 steps
+ Episode 143 - Trained steps 4967 - Score 78.0 - Avg_score 89.6  - Epsilon 0.0  - Learned 1152 steps
+ Episode 144 - Trained steps 5107 - Score 138.0 - Avg_score 108.8  - Epsilon 0.0  - Learned 1160 steps
+ Episode 145 - Trained steps 5145 - Score 36.0 - Avg_score 94.0  - Epsilon 0.0  - Learned 1168 steps
+ Episode 146 - Trained steps 5203 - Score 56.0 - Avg_score 90.8  - Epsilon 0.0  - Learned 1176 steps
+ Episode 147 - Trained steps 5331 - Score 126.0 - Avg_score 86.8  - Epsilon 0.0  - Learned 1184 steps
+ Episode 148 - Trained steps 5479 - Score 146.0 - Avg_score 100.4  - Epsilon 0.0  - Learned 1192 steps
+ Episode 149 - Trained steps 5507 - Score 26.0 - Avg_score 78.0  - Epsilon 0.0  - Learned 1200 steps
+ Episode 150 - Trained steps 5526 - Score 17.0 - Avg_score 74.2  - Epsilon 0.0  - Learned 1208 steps
+ Episode 151 - Trained steps 5664 - Score 136.0 - Avg_score 90.2  - Epsilon 0.0  - Learned 1216 steps
+ Episode 152 - Trained steps 5828 - Score 162.0 - Avg_score 97.4  - Epsilon 0.0  - Learned 1224 steps
+ Episode 153 - Trained steps 5950 - Score 120.0 - Avg_score 92.2  - Epsilon 0.0  - Learned 1232 steps
+ Episode 154 - Trained steps 6003 - Score 51.0 - Avg_score 97.2  - Epsilon 0.0  - Learned 1240 steps
+ Episode 155 - Trained steps 6030 - Score 25.0 - Avg_score 98.8  - Epsilon 0.0  - Learned 1248 steps
+ Episode 156 - Trained steps 6047 - Score 15.0 - Avg_score 74.6  - Epsilon 0.0  - Learned 1256 steps
+ Episode 157 - Trained steps 6184 - Score 135.0 - Avg_score 69.2  - Epsilon 0.0  - Learned 1264 steps
+ Episode 158 - Trained steps 6222 - Score 36.0 - Avg_score 52.4  - Epsilon 0.0  - Learned 1272 steps
+ Episode 159 - Trained steps 6323 - Score 99.0 - Avg_score 62.0  - Epsilon 0.0  - Learned 1280 steps
+ Episode 160 - Trained steps 6486 - Score 161.0 - Avg_score 89.2  - Epsilon 0.0  - Learned 1288 steps
+ Episode 161 - Trained steps 6542 - Score 54.0 - Avg_score 97.0  - Epsilon 0.0  - Learned 1296 steps
+steps                                                                                          steps
+ Episode 176 - Trained steps 7624 - Score 25.0 - Avg_score 29.0  - Epsilon 0.0  - Learned 1416 2 steps
+steps
+ Episode 177 - Trained steps 7707 - Score 81.0 - Avg_score 38.6  - Epsilon 0.0  - Learned 1424 steps
+ Episode 178 - Trained steps 7719 - Score 10.0 - Avg_score 38.8  - Epsilon 0.0  - Learned 1432 steps
+ Episode 179 - Trained steps 7834 - Score 113.0 - Avg_score 50.6  - Epsilon 0.0  - Learned 1440 steps
+ Episode 180 - Trained steps 8045 - Score 209.0 - Avg_score 87.6  - Epsilon 0.0  - Learned 1448 steps
+ Episode 181 - Trained steps 8070 - Score 23.0 - Avg_score 87.2  - Epsilon 0.0  - Learned 1456 steps
+ Episode 182 - Trained steps 8087 - Score 15.0 - Avg_score 74.0  - Epsilon 0.0  - Learned 1464 steps
+ Episode 183 - Trained steps 8232 - Score 143.0 - Avg_score 100.6  - Epsilon 0.0  - Learned 1472 steps
+ Episode 184 - Trained steps 8377 - Score 143.0 - Avg_score 106.6  - Epsilon 0.0  - Learned 1480 steps
+ Episode 185 - Trained steps 8412 - Score 33.0 - Avg_score 71.4  - Epsilon 0.0  - Learned 1488 steps
+ Episode 186 - Trained steps 8472 - Score 58.0 - Avg_score 78.4  - Epsilon 0.0  - Learned 1496 steps
+ Episode 187 - Trained steps 8505 - Score 31.0 - Avg_score 81.6  - Epsilon 0.0  - Learned 1504 steps
+ Episode 188 - Trained steps 8554 - Score 47.0 - Avg_score 62.4  - Epsilon 0.0  - Learned 1512 steps
+ Episode 189 - Trained steps 8692 - Score 136.0 - Avg_score 61.0  - Epsilon 0.0  - Learned 1520 steps
