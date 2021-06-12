@@ -6,7 +6,9 @@
   <table>
     <tr align="center">
       <td>
-https://user-images.githubusercontent.com/8006495/121773646-6a665380-cba7-11eb-9ecf-2b34e6e7ad0e.mp4
+<figure class="video_container">
+  <iframe src="https://user-images.githubusercontent.com/8006495/121773646-6a665380-cba7-11eb-9ecf-2b34e6e7ad0e.mp4" frameborder="0" allowfullscreen="false"> </iframe>
+</figure>
       </td>
       <td>
 https://user-images.githubusercontent.com/8006495/121773649-7b16c980-cba7-11eb-92f1-e6fded7b6cf9.mp4
