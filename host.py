@@ -7,7 +7,8 @@ if __name__ == "__main__":
     player = Agent(lr=0.005, gamma=0.99, n_actions=env.n_action, epsilon=0.0, batch_size=1,
                  input_dims=env.observation_shape, epsilon_dec=0, epsilon_end=0.01,
                  mem_size=1, replace=1, coldstart=0)
-    player.load_model(train_dir='./trained_models', learned_steps=1208)
+    player.load_model(train_dir='./trained_models', learned_steps=1836)
+    player.epsilon = 0
 
     episodes = 3
     steps_counter = 0
