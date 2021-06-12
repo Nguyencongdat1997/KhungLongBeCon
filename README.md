@@ -6,20 +6,18 @@
   <table>
     <tr align="center">
       <td>
-<figure class="video_container">
-  <iframe src="https://user-images.githubusercontent.com/8006495/121773646-6a665380-cba7-11eb-9ecf-2b34e6e7ad0e.mp4" frameborder="0" allowfullscreen="false"> </iframe>
-</figure>
+<img src="./demo/DinoRandom.gif"/>
       </td>
       <td>
-https://user-images.githubusercontent.com/8006495/121773649-7b16c980-cba7-11eb-92f1-e6fded7b6cf9.mp4
+<img src="./demo/Dino50.gif"/>
       </td>
     </tr>
     <tr align="center">
       <td> 
-https://user-images.githubusercontent.com/8006495/121773652-8538c800-cba7-11eb-8b9d-2dab31ee3c37.mp4
+<img src="./demo/Dino100.gif"/>
       </td>
       <td>
-https://user-images.githubusercontent.com/8006495/121773662-91bd2080-cba7-11eb-9138-2eb07dfa4cb9.mp4
+<img src="./demo/Dino250.gif"/>
       </td>
     </tr>
   </table>
