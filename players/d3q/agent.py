@@ -9,8 +9,8 @@ from utils.replay_buffer import ReplayBuffer
 
 
 class Agent():
-    def __init__(self, lr, gamma, n_actions, epsilon, batch_size, input_dims, coldstart, epsilon_dec=1e-3, epsilon_end=0.01,
-                 mem_size=100, replace=256):
+    def __init__(self, lr, gamma, n_actions, epsilon, batch_size, input_dims, coldstart=0, epsilon_dec=1e-3, epsilon_end=0.01,
+                 mem_size=256, replace=4):
         self.action_space = [i for i in range(n_actions)]
         self.gamma = gamma
         self.epsilon = epsilon
